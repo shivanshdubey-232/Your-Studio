@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+.progress-bar{
+  transition: 0;
+  animation-timing-function:unset;
+}
+
+
+.instrumentName{
+  width:100px;
+}
