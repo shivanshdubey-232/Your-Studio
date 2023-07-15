@@ -1,8 +1,45 @@
-body {
+body{
   margin: 0;
   padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-image: url("back2.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
+
+#tempoNum{
+  width: 60px;
+  color:white;
+  background-color: rgba(60, 54, 54, 0.516);
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+}
+.playbtn{
+  float: right;
+}
+.btn-success{
+  color: black;
+  background-color: rgb(112, 183, 6);
+  box-shadow: rgba(21, 251, 0, 0.563) 0px 3px 8px;
+}
+.branding{
+  display:inline;
+  margin-left:4em;
+  font-size: 2em;
+  color: #333;
+  font-weight: 500;
+}
+.instruments{
+  box-shadow: rgba(172, 171, 171, 0.25) 0px 54px 55px, rgb(17, 119, 29) 0px -12px 30px, rgb(3, 143, 52) 0px 4px 6px, rgb(12, 83, 3) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 4em;
+  margin-top:5em;
+}
 canvas {
   display: block;
 }
@@ -14,4 +51,45 @@ canvas {
 
 .instrumentName{
   width:100px;
+  color: black;
+  background-color: rgb(112, 183, 6);
+  box-shadow: rgba(21, 251, 0, 0.563) 0px 3px 8px;
 }
+
+
+.branding span {
+  animation: animate 1s linear infinite;
+  /* animation: animate 3s forwards; */
+}
+.branding span:nth-child(1) {
+  animation-delay: 0s;
+}
+.branding span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.branding span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.branding span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.branding span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+
+@keyframes animate {
+  0%,
+  80% {
+    color: #333;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+      0 0 120px #fff;
+  }
+}
+
+
+
